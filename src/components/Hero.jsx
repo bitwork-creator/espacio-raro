@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import raro13 from '../assets/RARO_13.png'
+import raro7 from '../assets/RARO_7.jpg'
 import './Hero.css'
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
     <section className="hero" id="hero">
       <div className="grain" aria-hidden="true" />
 
-      <div className="hero-bg" ref={bgRef} style={{ backgroundImage: `url(${raro13})` }} aria-hidden="true" />
+      <div className="hero-bg" ref={bgRef} style={{ backgroundImage: `url(${raro7})` }} aria-hidden="true" />
       <div className="hero-overlay" aria-hidden="true" />
 
       <nav className="nav" role="navigation">
