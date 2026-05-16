@@ -14,8 +14,7 @@ export default function Location() {
 
           <div className="location-desc reveal reveal-delay-2">
             <p>
-              No es un salón. Es un taller. Un espacio donde el metal,
-              la luz cruda y el sonido se mezclan con tijeras y tinte.
+              No es un salón. Es un taller. Un espacio donde todo está permitido.
             </p>
             <p>Work in progress, siempre.</p>
           </div>
