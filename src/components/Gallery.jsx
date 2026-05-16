@@ -7,7 +7,7 @@ import raro3 from '../assets/RARO_3.jpg'
 import raro4 from '../assets/RARO_4.jpg'
 import raro5 from '../assets/RARO_5.jpg'
 import raro6 from '../assets/RARO_6.jpg'
-import raro7 from '../assets/RARO_11.jpg'
+import raro14 from '../assets/RARO_14.jpg'
 import raro8 from '../assets/RARO_8.jpg'
 
 const ITEMS = [
@@ -17,7 +17,7 @@ const ITEMS = [
   { id: 4, img: raro4, w: 1200, h: 700, span: 2, label: 'The Cut', tag: 'CORTE' },
   { id: 5, img: raro5, w: 600, h: 900, span: 1, label: 'Neon Roots', tag: 'COLOR' },
   { id: 6, img: raro6, w: 600, h: 900, span: 1, label: 'Undercut Industrial', tag: 'CORTE' },
-  { id: 11, img: raro11, w: 600, h: 900, span: 1, label: 'Dark Wave', tag: 'ESPACIO' },
+  { id: 14, img: raro14, w: 600, h: 900, span: 1, label: 'Dark Wave', tag: 'ESPACIO' },
   { id: 8, img: raro8, w: 600, h: 900, span: 1, label: 'Brutalista', tag: 'TEXTURA' },
 ]
 
