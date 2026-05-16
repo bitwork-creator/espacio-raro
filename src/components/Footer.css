@@ -12,12 +12,22 @@
   text-align: center;
   padding: 8rem 2rem 6rem;
   position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-cta-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  pointer-events: none;
 }
 
 .footer-cta-block::before {
   content: 'RARO';
   position: absolute;
   inset: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,10 +35,15 @@
   font-weight: 700;
   letter-spacing: -0.05em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200, 255, 0, 0.04);
+  -webkit-text-stroke: 1px rgba(200, 255, 0, 0.06);
   pointer-events: none;
   user-select: none;
   line-height: 1;
+}
+
+.footer-cta-block > *:not(.footer-cta-bg-overlay) {
+  position: relative;
+  z-index: 2;
 }
 
 .footer-headline {

@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import raro12 from '../assets/RARO_12.png'
 import './Footer.css'
 
 export default function Footer() {
@@ -6,7 +7,8 @@ export default function Footer() {
 
   return (
     <footer className="footer" id="contact" ref={sectionRef}>
-      <div className="footer-cta-block">
+      <div className="footer-cta-block" style={{ backgroundImage: `url(${raro12})` }}>
+        <div className="footer-cta-bg-overlay" aria-hidden="true" />
         <div className="section-label reveal">04 — CONTACTO</div>
         <h2 className="footer-headline reveal reveal-delay-1">
           ¿Listo para<br />el cambio?
