@@ -76,7 +76,7 @@ export default function Gallery() {
             Ver más en Instagram
           </a>
           <a
-            href="https://ig.me/m/EspacioRARO.Hairlab"
+            href="https://wa.me/34602737920?text=Hola%2C%20quisiera%20reservar%20una%20cita%20en%20Espacio%20RARO%20Hairlab."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"

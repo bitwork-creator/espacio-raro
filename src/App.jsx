@@ -1,16 +1,21 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Hero from './components/Hero'
 import Gallery from './components/Gallery'
 import Concept from './components/Concept'
 import Testimonials from './components/Testimonials'
 import Location from './components/Location'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
+import WhatsAppFloat from './components/WhatsAppFloat'
 import './App.css'
 
 export default function App() {
   const dotRef = useRef(null)
   const ringRef = useRef(null)
   const posRef = useRef({ x: 0, y: 0, rx: 0, ry: 0 })
+  const [cookieBannerVisible, setCookieBannerVisible] = useState(
+    () => !localStorage.getItem('raro-cookie-consent')
+  )
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -79,6 +84,10 @@ export default function App() {
       <Testimonials />
       <Location />
       <Footer />
+      <WhatsAppFloat raised={cookieBannerVisible} />
+      {cookieBannerVisible && (
+        <CookieBanner onDismiss={() => setCookieBannerVisible(false)} />
+      )}
     </>
   )
 }

@@ -81,7 +81,14 @@ export default function Hero() {
 
         <div className="hero-actions">
           <a href="#gallery" className="btn-primary">Ver el trabajo</a>
-          <a href="#contact" className="btn-ghost">Reservar cita</a>
+          <a
+            href="https://wa.me/34602737920?text=Hola%2C%20quisiera%20reservar%20una%20cita%20en%20Espacio%20RARO%20Hairlab."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost"
+          >
+            Reservar cita
+          </a>
         </div>
       </div>
 
