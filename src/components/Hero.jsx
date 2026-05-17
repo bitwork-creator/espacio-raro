@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import raro7 from '../assets/RARO_7.jpg'
 import './Hero.css'
 
 export default function Hero() {
@@ -8,6 +7,8 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     const onMove = (e) => {
       const rx = (e.clientX / window.innerWidth - 0.5) * 28
       const ry = (e.clientY / window.innerHeight - 0.5) * 18
@@ -31,7 +32,7 @@ export default function Hero() {
     <section className="hero" id="hero">
       <div className="grain" aria-hidden="true" />
 
-      <div className="hero-bg" ref={bgRef} style={{ backgroundImage: `url(${raro7})` }} aria-hidden="true" />
+      <div className="hero-bg" ref={bgRef} style={{ backgroundImage: 'url(/hero-bg.jpg)' }} aria-hidden="true" />
       <div className="hero-overlay" aria-hidden="true" />
 
       <nav className="nav" role="navigation">
@@ -40,11 +41,11 @@ export default function Hero() {
           <span className="nav-brand-main">RARO</span>
         </a>
 
-        <div className={`nav-links ${menuOpen ? 'open' : ''}`} role="menubar">
-          <a href="#gallery" role="menuitem" onClick={() => setMenuOpen(false)}>Lookbook</a>
-          <a href="#location" role="menuitem" onClick={() => setMenuOpen(false)}>The Lab</a>
-          <a href="#contact" role="menuitem" onClick={() => setMenuOpen(false)}>Contacto</a>
-          <a href="#contact" className="nav-cta" role="menuitem" onClick={() => setMenuOpen(false)}>
+        <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <a href="#gallery" onClick={() => setMenuOpen(false)}>Lookbook</a>
+          <a href="#location" onClick={() => setMenuOpen(false)}>The Lab</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contacto</a>
+          <a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>
             Reservar
           </a>
         </div>
@@ -68,11 +69,12 @@ export default function Hero() {
           <span>VALENCIA, ES</span>
         </div>
 
-        <h1 className="hero-title" ref={logoRef} aria-label="RARO">
-          <span className="raro-letter">R</span>
-          <span className="raro-letter">A</span>
-          <span className="raro-letter">R</span>
-          <span className="raro-letter">O</span>
+        <h1 className="hero-title" ref={logoRef}>
+          <span className="raro-letter" aria-hidden="true">R</span>
+          <span className="raro-letter" aria-hidden="true">A</span>
+          <span className="raro-letter" aria-hidden="true">R</span>
+          <span className="raro-letter" aria-hidden="true">O</span>
+          <span className="sr-only">Espacio RARO Hairlab — Peluquería Creativa en Valencia</span>
         </h1>
 
         <p className="hero-subtitle">Not your average haircut.</p>
@@ -88,8 +90,9 @@ export default function Hero() {
         <div className="scroll-bar" />
       </div>
 
-      <div className="side-label side-label--left" aria-hidden="true">
-        CORTES — COLOR — RITUAL
+      <div className="side-label side-label--left">
+        <span aria-hidden="true">CORTES — COLOR — RITUAL</span>
+        <span className="sr-only">Servicios: Cortes, Color y Ritual</span>
       </div>
       <div className="side-label side-label--right" aria-hidden="true">
         ALEJANDRA SOLER 13

@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="footer" id="contact" ref={sectionRef}>
       <div className="footer-cta-block" style={{ backgroundImage: `url(${raro12})` }}>
         <div className="footer-cta-bg-overlay" aria-hidden="true" />
-        <div className="section-label reveal">04 — CONTACTO</div>
+        <div className="section-label reveal">06 — CONTACTO</div>
         <h2 className="footer-headline reveal reveal-delay-1">
           ¿Listo para<br />el cambio?
         </h2>
@@ -17,7 +17,7 @@ export default function Footer() {
           Reservá tu cita directo por Instagram.
         </p>
         <a
-          href="https://www.instagram.com/espacioraro.hairlab/"
+          href="https://ig.me/m/EspacioRARO.Hairlab"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-book reveal reveal-delay-3"
@@ -42,7 +42,7 @@ export default function Footer() {
 
         <nav className="footer-links" aria-label="Enlaces externos">
           <a
-            href="https://www.instagram.com/espacioraro.hairlab/"
+            href="https://www.instagram.com/EspacioRARO.Hairlab/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ export default function Footer() {
           </a>
         </nav>
 
-        <p className="footer-copy">© 2024 Espacio RARO</p>
+        <p className="footer-copy">© 2026 Espacio RARO Hairlab</p>
       </div>
     </footer>
   )

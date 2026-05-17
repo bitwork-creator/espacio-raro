@@ -9,7 +9,7 @@ export default function Location() {
     <section className="location" id="location" ref={sectionRef}>
       <div className="location-inner">
         <div className="location-text">
-          <div className="section-label reveal">03 — THE LAB</div>
+          <div className="section-label reveal">05 — THE LAB</div>
           <h2 className="location-title reveal reveal-delay-1">El Espacio</h2>
 
           <div className="location-desc reveal reveal-delay-2">

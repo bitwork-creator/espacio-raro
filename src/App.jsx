@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react'
 import Hero from './components/Hero'
 import Gallery from './components/Gallery'
+import Concept from './components/Concept'
+import Testimonials from './components/Testimonials'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import './App.css'
@@ -11,6 +13,8 @@ export default function App() {
   const posRef = useRef({ x: 0, y: 0, rx: 0, ry: 0 })
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     const pos = posRef.current
     let animId
 
@@ -49,6 +53,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const interactables = document.querySelectorAll('a, button')
     const onEnter = () => ringRef.current?.classList.add('expanded')
     const onLeave = () => ringRef.current?.classList.remove('expanded')
@@ -70,6 +75,8 @@ export default function App() {
       <div className="cursor-ring" ref={ringRef} aria-hidden="true" />
       <Hero />
       <Gallery />
+      <Concept />
+      <Testimonials />
       <Location />
       <Footer />
     </>

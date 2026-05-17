@@ -63,6 +63,28 @@ export default function Gallery() {
           <GalleryItem key={item.id} item={item} index={i} />
         ))}
       </div>
+
+      <div className="gallery-footer">
+        <p className="gallery-footer-label reveal">¿Te quedaste con ganas de más?</p>
+        <div className="gallery-footer-actions reveal reveal-delay-1">
+          <a
+            href="https://www.instagram.com/EspacioRARO.Hairlab/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost"
+          >
+            Ver más en Instagram
+          </a>
+          <a
+            href="https://ig.me/m/EspacioRARO.Hairlab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Reservar cita
+          </a>
+        </div>
+      </div>
     </section>
   )
 }
