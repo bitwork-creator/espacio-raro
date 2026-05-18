@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer-cta-bg-overlay" aria-hidden="true" />
         <div className="section-label reveal">06 — CONTACTO</div>
         <h2 className="footer-headline reveal reveal-delay-1">
-          ¿Listo para<br />el cambio?
+          ¿LISTX PARA <br />EL CAMBIO?
         </h2>
         <p className="footer-sub reveal reveal-delay-2">
           Reservá tu cita directo por Instagram.
