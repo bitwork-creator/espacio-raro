@@ -77,7 +77,7 @@ export default function Hero() {
           <span className="sr-only">Espacio RARO Hairlab — Peluquería Creativa en Valencia</span>
         </h1>
 
-        <p className="hero-subtitle">Not your average haircut.</p>
+        <p className="hero-subtitle">No venimos a gustarle a todos.</p>
 
         <div className="hero-actions">
           <a href="#gallery" className="btn-primary">Ver el trabajo</a>
