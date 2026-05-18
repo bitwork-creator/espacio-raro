@@ -55,7 +55,7 @@ export default function Gallery() {
       <div className="gallery-header reveal">
         <div className="section-label">02 — LOOKBOOK</div>
         <h2 className="gallery-title">El Trabajo</h2>
-        <p className="gallery-desc">Cada corte es un manifiesto.</p>
+        <p className="gallery-desc">No venimos a gustarle a todxs.</p>
       </div>
 
       <div className="gallery-grid">
